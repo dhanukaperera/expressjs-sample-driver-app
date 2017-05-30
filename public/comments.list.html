@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-md-12">
+        <button class="btn btn-default pull-right" data-toggle="collapse" data-target="#collapseExample"
+                aria-controls="collapseExample">+
+        </button>
+    </div>
+</div>
+<div class="row">
+    <div class="collapse" id="collapseExample" aria-expanded="false">
+        <br/>
+        <div class="col-md-11">
+            <textarea class="form-control" placeholder="Comment" ng-model="comment.text"></textarea>
+        </div>
+        <div class="col-md-1">
+            <button class="btn btn-primary" ng-click="addComment(driver._id,comment)">Save</button>
+        </div>
+        <br/>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div ng-repeat="comment in driver.comments">
+            <blockquote>
+                {{comment.text}}
+            </blockquote>
+        </div>
+    </div>
+</div>

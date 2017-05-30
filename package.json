@@ -1,0 +1,19 @@
+{
+  "name": "expressjs-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "KushiraG",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.17.1",
+    "express": "4.15.2",
+    "mongoose": "4.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
